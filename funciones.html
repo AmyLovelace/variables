@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones JS</title>
+</head>
+<body>
+    <script>
+       /* function resta(valor1, valor2){
+            var resultado= valor1 - valor2;
+            return resultado;
+        }
+
+        document.write(resta(50,30));*/
+
+        var valorminimo= function(valor1,valor2){
+            if(valor1 < valor2){
+                return valor1;
+            }else{
+                return valor2
+            }
+        }
+        document.write(valorminimo(100,25));
+        document.write("<br>");
+        document.write(valorminimo(50,20));
+        document.write("<br>");
+        document.write(valorminimo(60,90));
+
+    </script>
+</body>
+</html>
