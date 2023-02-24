@@ -1,0 +1,10 @@
+
+.titulo{
+border:1px solid #000;
+background: #34d7dd;
+padding: 10px;
+color: #fff;
+        }
+.tituloGrande{
+ font-size: 60px;
+        }

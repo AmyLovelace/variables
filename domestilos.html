@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicar estilos DOM JS</title>
+    <link rel="stylesheet" href="domestilos.css">
+</head>
+<body>
+    <h1 id="titulo" class="titulo tituloGrande">TITULO DE MI PAGINA WEB</h1>
+    <script>
+        var titulo =document.getElementById("titulo")
+    //metodo 1
+    titulo.className="titulo tituloGrande"
+
+    //metodo 2
+    titulo.style.color ="#000";
+    titulo.style.fontSize="80px";
+    titulo.style.background="coral"
+
+    </script>
+</body>
+</html>
