@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear elemento en el DOM JS</title>
+</head>
+<body>
+    <ol id="lista">
+        <li>Elemento N1</li>
+        <li>Elemento N2</li>
+    </ol>
+    <script>
+        //creamos nuestro elemento
+    var lista=document.createElement("li");
+    var contenido=document.createTextNode("Elemento N3");
+    lista.appendChild(contenido);
+
+    /*/metodo 1
+    var contenedor = document.getElementById("lista");
+    contenedor.appendChild(lista);*/
+
+    /*/metodo 2
+    var contenedor= document.getElementsByTagName("li")[0].parentNode;
+    contenedor.appendChild(lista)*/
+
+    //metodo 3
+    var contenedor= document.getElementsByTagName("li")[0].parentNode;
+    var posicion= document.getElementsByTagName("li")[1];
+    contenedor.insertBefore(lista,posicion);
+
+    </script>
+</body>
+</html>
