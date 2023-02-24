@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="inputs" class="inputs">
+            <input type="number" id="numero1">
+            <input type="number" id="numero2">
+        </div>
+
+        <div id="btns" class="btns">
+        <button id="suma">Sumar</button>
+        <button id="resta">Restar</button>
+        <button id="multiplica">Multiplicar</button>
+        <button id="divide">Dividir</button>
+        </div>
+
+        <div class="result">
+        <p id="resultado">-</p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+    var operaciones=function(e){
+        var numero1=parseFloat(document.getElementById("numero1").value);
+        var numero2=parseFloat(document.getElementById("numero2").value);
+        var result=document.getElementById("resultado");
+        var operacion=e.target.id;
+
+        if(operacion=="suma"){
+            var resultado = numero1 + numero2;
+        }
+        else if(operacion =="resta"){
+            var resultado = numero1 - numero2;
+        }
+        else if(operacion =="multiplica"){
+            var resultado = numero1 * numero2;
+        }
+        else if(operacion=="divide"){
+            var resultado = numero1 / numero2;
+        }
+        result.innerHTML=resultado;
+        }
+        //obtenemos el evento click en cada boton
+        var botones=document.getElementById("btns");
+        botones.addEventListener("click",operaciones);
+
+
+    </script>
+</body>
+</html>
