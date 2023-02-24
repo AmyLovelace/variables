@@ -1,0 +1,12 @@
+
+.container{
+    width:200px;
+    height:200px;
+    background: #26cfcf;
+    transition: all 0.5s;
+}
+.grande{
+    width: 500px;
+    height: 500px;
+    background: #cf26c1;
+}
