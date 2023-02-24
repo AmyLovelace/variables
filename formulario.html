@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de Formulario JS</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form id="formulario" name="formulario">
+		<div class="two-columns">
+			<div class="fields">
+				<label for="name">Nombre</label>
+				<input id="name" type="text" name="name" autocomplete="off"> 	
+			</div>
+			
+			<div class="fields">
+				<label for="lastname">Apellido</label>
+				<input id="lastname" type="text" name="lastname" autocomplete="off">	
+			</div>
+		</div>
+
+		<div class="two-columns">
+			<div class="fields">
+				<label for="tel">Telefono</label>
+				<input id="tel" type="text" name="tel" autocomplete="off">
+			</div>
+
+			<div class="fields">
+				<label for="email">Correo</label>
+				<input id="email" type="email" name="email" autocomplete="off">	
+			</div>
+		</div>
+		
+		<div class="fields radiobutton">
+			<label for="hombre">Hombre</label>
+			<input type="radio" name="sexo" id="hombre" value="Hombre">
+			<label for="mujer">Mujer</label>
+			<input type="radio" name="sexo" id="mujer" value="Mujer">
+		</div>
+
+		<div class="fields">
+			<label for="coment">Comentarios</label>
+			<textarea id="coment"></textarea>
+		</div>
+
+		<div class="fields term">
+			<label for="term">Terminos y Condiciones</label>
+			<input type="checkbox" name="term" id="term">
+		</div>
+
+		<div class="btn">
+			<input type="submit" name="enviar" id="btn" value="Enviar">
+		</div>
+     </form>  
+
+     <script src="formulario.js"></script>
+</body>
+</html>
