@@ -8,21 +8,34 @@
 </head>
 <body>
     <ol id="lista">
-        <li id="uno">Amanecer Cabrera</li>
-        <li>Andres Avila</li>
-    </ol>
+        <li id="uno">Jorge Gabriel</li>
+        <li>Pedro Perez</li>
+   </ol>
+
+
     <script>
         //editar contenido
-        var primerElemento=document.getElementById("uno");//toma en cuenta las etiquetas
-            //metodo 1
-            primerElemento.innerHTML="Nuevo Elemento"
+        var primerElemento=document.getElementById("uno");
+            
+        /*/metodo 1
+            primerElemento.innerHTML="Nuevo <i>Elemento</i>";//toma en cuenta las etiquetas
             
             //metodo 2
-            primerElemento.textContent
+            primerElemento.textContent="nuevo <i>Elemento</i> de texto"//no las toma en cuenta*/
 
-        //reemplazar elemento
 
-        //eliminar elemento
+          //Reemplazar elemento
+          var elemento = document.createElement("li");
+          var contenido = document.createTextNode("Alejandro Gimenez");
+          elemento.appendChild(contenido);
+
+          var contenedor = document.getElementById("lista");
+          var posicion = document.getElementsByTagName("li")[0];
+
+          //contenedor.replaceChild(elemento, posicion);
+
+          //Eliminar elemento
+          contenedor.removeChild(posicion);
 
     </script>
 </body>
